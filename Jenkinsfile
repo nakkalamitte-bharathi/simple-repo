@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Demo Value'
-        sh 'sh run_build_script.sh'
+        sh 'echo " Build Shell"'
       }
     }
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Liinux Test Stage') {
           steps {
             echo 'Run Linux tests'
-            sh 'sh run_linux_tests.sh'
+            sh 'echo "enter Linux Test"'
           }
         }
 
