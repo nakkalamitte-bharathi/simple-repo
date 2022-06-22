@@ -42,7 +42,7 @@ pipeline {
   }
   post {
     always {
-      archiveArtifacts(artifacts: 'target/demoapp.jar', fingerprint: true)
+      archiveArtifacts(artifacts: 'index.jsp', fingerprint: true)
     }
 
     failure {
